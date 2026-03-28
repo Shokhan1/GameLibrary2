@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог игр | GameLibrary</title>
+    <link rel="stylesheet" href="catalog-style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">GAME<span>LIBRARY</span></a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="#" class="active">Каталог</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container main-content">
+    <section class="games-section">
+        <div class="section-header">
+            <h1>Каталог</h1>
+            <div class="view-options">
+                <span>Популярные</span>
+                <div class="icons">
+                    <i>▤</i> <i>▦</i>
+                </div>
+            </div>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+            <div class="game-card" data-genre="action">
+                <div class="game-poster">
+                    <img src="https://via.placeholder.com/160x230">
+                    <a href="game-page.html"></a>
+                    <span class="rating">9.2</span>
+                    <span class="status">Топ</span>
+                </div>
+                <div class="game-info">
+                    <h3 class="title">Elden Ring</h3>
+                    <p class="genre">Экшен, RPG</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="filter-panel">
+        <div class="filter-header">
+            <span>Фильтр</span>
+            <button id="clearFilters">Очистить</button>
+        </div>
+
+        <div class="filter-group">
+            <label>Жанр</label>
+            <select id="genreSelect">
+                <option value="Все">Все жанры</option>
+                <option value="Экшен">Экшен</option>
+                <option value="рпг">рпг</option>
+                <option value="strategy">Стратегия</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Платформа</label>
+            <select>
+                <option>PC</option>
+                <option>PlayStation</option>
+                <option>Xbox</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Год выхода</label>
+            <div class="year-range">
+                <input type="number" placeholder="От">
+                <input type="number" placeholder="До">
+            </div>
+        </div>
+
+        <button class="apply-btn" id="applyBtn">Применить</button>
+    </aside>
+</main>
+
+<script src="catalog-script.js"></script>
+</body>
+</html>
